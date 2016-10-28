@@ -1,0 +1,11 @@
+import pprint
+import scipy
+import scipy.linalg  # SciPy Linear Algebra library
+
+## input and output
+
+A = raw_input('Please enter the matrix you want to decompose through LU decomposition: ')
+
+P, L, U = scipy.linalg.lu(A)
+
+print P
